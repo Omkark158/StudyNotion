@@ -66,13 +66,12 @@ function Home() {
             <source src={Banner} type="video/mp4" />
           </video>
         </div>
-
         {/* Code Section 1  */}
         <div>
           <CodeBlocks
             position={"lg:flex-row"}
             heading={
-              <div className="text-4xl font-semibold">
+              <div data-aos="fade-right" className="text-4xl font-semibold">
                 Unlock your
                 <HighlightText text={"coding potential"} /> with our online
                 courses.
@@ -102,7 +101,7 @@ function Home() {
           <CodeBlocks
             position={"lg:flex-row-reverse"}
             heading={
-              <div className="w-[100%] text-4xl font-semibold lg:w-[50%]">
+              <div data-aos="fade-left" className="w-[100%] text-4xl font-semibold lg:w-[50%]">
                 Start
                 <HighlightText text={"coding in seconds"} />
               </div>
@@ -125,6 +124,7 @@ function Home() {
             backgroundGradient={<div className="codeblock2 absolute"></div>}
           />
         </div>
+
 
         {/* Explore Section */}
         <ExploreMore />

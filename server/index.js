@@ -19,7 +19,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 // Setting up port number
-const PORT = process.env.PORT ||4000;
+const PORT = process.env.PORT ||5000;
 
 // Connecting to database
 database.connect();
@@ -29,7 +29,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin: "http://localhost:3000",
+		origin: "http://localhost:5173",
 		credentials: true,
 	})
 );

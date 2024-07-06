@@ -37,7 +37,7 @@ function Navbar() {
   const { totalItems } = useSelector((state) => state.cart)
   const location = useLocation()
 
-  const [subLinks, setSubLinks] = useState([])
+  const [subLinks, setSubLinks] = useState([]);
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
@@ -53,7 +53,7 @@ function Navbar() {
     })()
   }, [])
 
-  // console.log("sub links", subLinks)
+  //console.log("sub links", subLinks)
 
   const matchRoute = (route) => {
     return matchPath({ path: route }, location.pathname)

@@ -8,6 +8,7 @@ const { passwordUpdated } = require("../mail/templates/passwordUpdate")
 const Profile = require("../models/Profile")
 require("dotenv").config()
 
+
 // Signup Controller for Registering USers
 
 exports.signup = async (req, res) => {
@@ -201,7 +202,7 @@ exports.sendotp = async (req, res) => {
       upperCaseAlphabets: false,
       lowerCaseAlphabets: false,
       specialChars: false,
-    })
+    });
     const result = await OTP.findOne({ otp: otp })
     console.log("Result is Generate OTP Func")
     console.log("OTP", otp)
